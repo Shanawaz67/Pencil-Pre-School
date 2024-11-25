@@ -1,0 +1,1 @@
+Pencil Preschool Website – Designed by Ryse Digital Solutions, it features a vibrant, child-friendly design with responsive layouts, program details, parent resources, a gallery, and a contact form for easy enrollment. Built with HTML5, CSS3, JavaScript, and Node.js, it’s SEO-optimized to enhance the school’s online presence and parent engagement.
