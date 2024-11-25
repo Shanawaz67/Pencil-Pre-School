@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css'><link rel="stylesheet" href="./style.css">
+
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--------------------------------- Header Part ------------------------------------------>
+    <header class="headerPro">
+        <nav class="navHeader">
+            <div class="logoHeader">
+                <a href="./index.html" target="_self"><img src="./assets/images/logo_page-0001.jpg" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="leftSideHeader links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <ul class="ulleftHeader">
+                    <li><a href="./index.html" target="_self">Home</a></li>
+                    <li><a href="./AboutUs.html" target="_self">About Us</a></li>
+                    <li><a href="./Franchise.html" target="_self">Franchise</a></li>
+                    <li><a href="./Curriclum.html" target="_self">Curriculum & Programs</a></li>
+                    <li><a href="./ContactUs.html" target="_self">Contacnt Us</a></li>
+                    <li class="num"><a href="" target="_self"><i class="fa-solid fa-phone"></i>&nbsp; | &nbsp;9999999999</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------------------- Banner Page  ----------------------------------------->
+    <style>
+        .secBanForAU{
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            background-image: url("assets/images/bannerAboutUs.jpg");
+            height: 90vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+        .secBanForAU::after{
+            content: "";
+            background-image: url("assets/images/bottom_grey_wave_01cccc.png");
+            background-attachment: scroll;
+            width: 100%;
+            height: 30vh;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .divBanForAU{
+            width: 100%;
+            height: 100%;
+        }
+        .divBanForAU div{
+            width: 50%;
+            height: 150px;
+            display: grid;
+            justify-content: center;
+            margin-top: 150px;
+            gap: 22px;
+            /* align-items: center;
+            justify-items: center; */
+        }
+        .divBanForAU div >h1{
+            width: 100%;
+            height: auto;
+            font-family: "Coiny", system-ui;
+            font-weight: 400;
+            font-size: 80px;
+            font-style: normal;
+            color: #fff;
+            /* margin: 11% 10%; */
+        }
+        .divBanForAU div p{
+            color: var(--c4);
+            width: 50%;
+            font-weight: 900;
+        }
+          /************************************* For mobile Responsive  ********************************************/
+          @media only screen and (max-width:480px){
+            .secBanForAU{
+                position: relative;
+                display: block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                width: 100%;
+                height: 80vh;
+            }
+        .secBanForAU::after{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        .divBanForAU{
+                width: 100%;
+                height: 100%;
+            }
+        .divBanForAU div{
+            width: 100%;
+        }
+        .divBanForAU >h1{
+                border: 2px solid;
+                width: 100%;
+                height: auto;
+                font-family: "Coiny", system-ui;
+                font-weight: 400;
+                font-size: 60px;
+                font-style: normal;
+                color: #fff;
+                text-align: center;
+                margin: 0%;
+                /* margin: 15% 5%; */
+            }
+        }
+        /****************************** For Tab Responsive ********************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .secBanForAU{
+                position: relative;
+                display: block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                width: 100%;
+                height: 80vh;
+            }
+            .secBanForAU::after{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .divBanForAU{
+                width: 100%;
+                height: 100%;
+            }
+            .divBanForAU div{
+                width: 100%;
+            }
+            .divBanForAU >h1{
+                width: 100%;
+                height: auto;
+                font-family: "Coiny", system-ui;
+                font-weight: 400;
+                font-size: 80px;
+                font-style: normal;
+                color: #fff;
+                margin: 15% 5%;
+            }
+        }
+    </style>
+    <section class="secBanForAU">
+        <div class="divBanForAU">
+            <div>
+                <p>LITTLE SOMETHING</p>
+                <h1>About Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------- Intro About Us ------------------------------------------------->
+
+    <style>
+        .secIntroAU{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-top: 66px;
+            padding-bottom: 66px;
+            background-color: var(--bc2);
+        }
+        .divIntroAU{
+            display: flex;
+            justify-content: right;
+            gap: 22px;
+        }
+        .divImgIntro{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divImgIntro img{
+            width: 100%;
+            height: auto;
+        }
+        .divIntroAUContent{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divIntroAUContent h1{
+            font-family: "Coiny", system-ui;
+            font-weight: 400;
+            font-size: 50px;
+            font-style: normal;
+            margin-top: 20px;
+        }
+        .divIntroAUContent .years{
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--c4);
+        }
+        .contentPara{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        /************************************* For mobile Responsive  *******************************************/
+        @media only screen and (max-width: 480px){
+            .divIntroAU{
+                display: grid;
+                gap: 22px;
+            }
+            .divImgIntro{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divIntroAUContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+        /******************************************* For Tab Responsive ***************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divIntroAU{
+                display: grid;
+                gap: 22px;
+            }
+            .divImgIntro{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divIntroAUContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+    </style>
+    <section class="secIntroAU">
+        <div class="divIntroAU">
+            <div class="divIntroAUContent">
+                <p class="years">LET'S SIMPLY HAVE FUN</p>
+                <h1>Introduction</h1>
+                <p class="contentPara">At The Pencil, our team is a dynamic mix of innovators, entrepreneurs, educators, and creative thinkers, all united in the mission to positively impact children's lives across India. We are driven by a shared passion for sparking curiosity and nurturing a love for learning.</p>
+                <p class="contentPara">We believe every creation we develop has the power to inspire children to craft their own unique learning journeys. We also acknowledge that adults and educators are on their own transformative journeys alongside the children. Together, we walk hand in hand, embracing mutual learning and growth.</p>
+            </div>
+            <div class="divImgIntro">
+                <img src="./assets/images/intro.jpg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------- Vission and Mission ------------------------------------------->
+
+    <style>
+        .secVM{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-top: 66px;
+            padding-bottom: 66px;
+        }
+        .secVM::before{
+            content: "";
+            width: 100%;
+            background-image: url("assets/images/top\ 3.png");
+            height: 10vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .divVM{
+            display: flex;
+            align-items: left;
+            gap: 22px;
+        }
+        .divVMImg{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divVMImg img{
+            width: 100%;
+            height: auto;
+        }
+        .divVMContent{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divVMContent h1{
+            font-family: "Coiny", system-ui;
+            font-weight: 400;
+            font-size: 50px;
+            font-style: normal;
+        }
+        .divVMContent .years{
+            font-size: 20px;
+        }
+        .contentPara{
+            margin-top: 20px;
+        }
+        .contentPara+p{
+            margin-top: 20px;
+        }
+        .divInVissionIn svg{
+            width: 50px;
+        }
+        .divInVissionIn{
+            display: flex;
+            gap: 22px;
+            margin-top: 20px;
+        }
+        .divContentVissionM{
+            display: inline-block;
+        }
+        .divContentVissionM h6{
+            font-size: 15px;
+        }
+        /************************************* For mobile Responsive  *******************************************/
+        @media only screen and (max-width: 480px){
+            .divVM{
+                display: grid;
+                gap: 22px;
+            }
+            .divVMImg{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divVMContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+        /******************************************* For Tab Responsive ***************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divVM{
+                display: grid;
+                gap: 22px;
+            }
+            .divVMImg{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divVMContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+    </style>
+    <section class="secVM">
+        <div class="divVM">
+            <div class="divVMImg">
+                <img src="./assets/images/vision.jpg.png" alt="">
+            </div>
+            <div class="divVMContent">
+                <h1>Vision & Mission</h1>
+                <div class="divVissionInContent">
+                    <div class="divInVissionIn">
+                        <div class="svgImg">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffd4ca;}.cls-2{fill:#333;}</style></defs><title>_</title><g id="_Group_" data-name="<Group>"><path id="_Path_" data-name="<Path>" class="cls-1" d="M74,18.23H63.74A13.78,13.78,0,0,1,77.47,32V54.29A13.78,13.78,0,0,1,63.74,68H74A13.78,13.78,0,0,0,87.78,54.29V32A13.78,13.78,0,0,0,74,18.23Z"></path></g><g id="_Group_2" data-name="<Group>"><path id="_Path_2" data-name="<Path>" class="cls-2" d="M27,83.83a2.11,2.11,0,0,1-.89-.21,2,2,0,0,1-1.17-1.85V70.09a15.84,15.84,0,0,1-14.77-15.8V32A15.8,15.8,0,0,1,26,16.17H74A15.8,15.8,0,0,1,89.84,32V54.29A15.8,15.8,0,0,1,74,70.09H59.75a2.06,2.06,0,1,1,0-4.12H74A11.67,11.67,0,0,0,85.71,54.29V32A11.67,11.67,0,0,0,74,20.3H26A11.67,11.67,0,0,0,14.29,32V54.29A11.67,11.67,0,0,0,26,66h1A2,2,0,0,1,29.05,68V77.3L41.83,66.45a2,2,0,0,1,2.68,3.09L28.37,83.28A1.86,1.86,0,0,1,27,83.83Z"></path><path id="_Path_3" data-name="<Path>" class="cls-2" d="M70.6,38.84H29.4a2.06,2.06,0,0,1,0-4.12H70.6a2.06,2.06,0,1,1,0,4.12Z"></path><path id="_Path_4" data-name="<Path>" class="cls-2" d="M56.87,52.58H29.4a2.06,2.06,0,0,1,0-4.12H56.87a2.06,2.06,0,1,1,0,4.12Z"></path><path id="_Path_5" data-name="<Path>" class="cls-2" d="M70.6,52.58a2.06,2.06,0,0,1,0-4.12h0a2.06,2.06,0,1,1,0,4.12Z"></path></g></svg>
+
+                        </div>
+                            <div class="divContentVissionM">
+                                <h6>Our Vision</h6>
+                                <p>Empowering young minds to reach their full potential.</p>
+                            </div>
+                    </div>
+                    <div class="divInVissionIn">
+                            <div class="svgImg">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffd4ca;}.cls-2{fill:#333;}</style></defs><title>_</title><g id="_Group_" data-name="<Group>"><path id="_Path_" data-name="<Path>" class="cls-1" d="M74,18.23H63.74A13.78,13.78,0,0,1,77.47,32V54.29A13.78,13.78,0,0,1,63.74,68H74A13.78,13.78,0,0,0,87.78,54.29V32A13.78,13.78,0,0,0,74,18.23Z"></path></g><g id="_Group_2" data-name="<Group>"><path id="_Path_2" data-name="<Path>" class="cls-2" d="M27,83.83a2.11,2.11,0,0,1-.89-.21,2,2,0,0,1-1.17-1.85V70.09a15.84,15.84,0,0,1-14.77-15.8V32A15.8,15.8,0,0,1,26,16.17H74A15.8,15.8,0,0,1,89.84,32V54.29A15.8,15.8,0,0,1,74,70.09H59.75a2.06,2.06,0,1,1,0-4.12H74A11.67,11.67,0,0,0,85.71,54.29V32A11.67,11.67,0,0,0,74,20.3H26A11.67,11.67,0,0,0,14.29,32V54.29A11.67,11.67,0,0,0,26,66h1A2,2,0,0,1,29.05,68V77.3L41.83,66.45a2,2,0,0,1,2.68,3.09L28.37,83.28A1.86,1.86,0,0,1,27,83.83Z"></path><path id="_Path_3" data-name="<Path>" class="cls-2" d="M70.6,38.84H29.4a2.06,2.06,0,0,1,0-4.12H70.6a2.06,2.06,0,1,1,0,4.12Z"></path><path id="_Path_4" data-name="<Path>" class="cls-2" d="M56.87,52.58H29.4a2.06,2.06,0,0,1,0-4.12H56.87a2.06,2.06,0,1,1,0,4.12Z"></path><path id="_Path_5" data-name="<Path>" class="cls-2" d="M70.6,52.58a2.06,2.06,0,0,1,0-4.12h0a2.06,2.06,0,1,1,0,4.12Z"></path></g></svg>
+
+                            </div>
+                            <div class="divContentVissionM">
+                                <h6>Our Mission</h6>
+                                <p>At The Pencil, our mission is to empower young minds in India through exceptional, play-based education that nurtures a lifelong love of learning. Drawing inspiration from Finnish early education principles, we create a child-centered environment where discovery, creativity, and joy shape the next generation of curious, confident learners.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------- Our Philosophy --------------------------------------->
+
+        <style>
+            .secIntroOP{
+                display: block;
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding-top: 66px;
+                padding-bottom: 66px;
+            }
+            .divIntroOP{
+                display: flex;
+                justify-content: right;
+                gap: 22px;
+            }
+            .divImgOP{
+                width: 45%;
+                margin-top: 60px;
+            }
+            .divImgOP img{
+                width: 100%;
+                height: auto;
+            }
+            .divIntroOPContent{
+                width: 45%;
+                margin-top: 60px;
+            }
+            .divIntroOPContent h1{
+                font-family: "Coiny", system-ui;
+                font-weight: 400;
+                font-size: 50px;
+                font-style: normal;
+                margin-top: 20px;
+            }
+            .divIntroOPContent .years{
+                font-size: 20px;
+                font-weight: 900;
+                color: var(--c4);
+            }
+            .contentPara{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            
+            /************************************* For mobile Responsive  *******************************************/
+            @media only screen and (max-width: 480px){
+                .divIntroOP{
+                    display: grid;
+                    gap: 22px;
+                }
+                .divImgOP{
+                    width: 100%;
+                    margin-top: 60px;
+                }
+                .divIntroOPContent{
+                    width: 100%;
+                    margin-top: 60px;
+                }
+            }
+            /******************************************* For Tab Responsive ***************************************/
+            @media (min-width:500px) and (max-width:1024px){
+                .divIntroOP{
+                    display: grid;
+                    gap: 22px;
+                }
+                .divImgOP{
+                    width: 100%;
+                    margin-top: 60px;
+                }
+                .divIntroOPContent{
+                    width: 100%;
+                    margin-top: 60px;
+                }
+            }
+        </style>
+        <section class="secIntroOP">
+            <div class="divIntroOP">
+                <div class="divIntroOPContent">
+                    <p class="years">THE PENCIL PRESCHOOL</p>
+                    <h1>Our Philosophy</h1>
+                    <p class="contentPara">The Pencil Preschool is committed to creating a warm, nurturing environment that fosters children’s learning and growth. Our aim is to provide a childhood experience rich with adventure, curiosity, exploration, and friendship. We strive to build a program that cultivates a sense of belonging, where both families and children feel welcomed and embraced.</p>
+                </div>
+                <div class="divImgOP">
+                    <img src="./assets/images/philosyphy.jpg.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------------------------------- Fill Out Contact form ---------------------------------------------------->
+    <style>
+        .secFillForm{
+         width: 100%;
+         height: auto;
+         display: block;
+         padding: 66px 20px;
+         position: relative;
+        } 
+        .divFillForm{
+         width: 100%;
+         display: grid;
+         justify-items: center;
+        }
+        .formTitle{
+         width: 50%;
+         text-align: center;
+         /* margin-left: 350px; */
+        }
+        .formTitle h1{
+         font-family: "Coiny", system-ui;
+         font-weight: 400;
+         font-size: 50px;
+        }
+        .formBlanks{
+         width: 75%;
+         margin-top: 40px;
+        }
+        .inFillDivCU{
+         width: 100%;
+        }
+        .inFillDivCU input{
+         width: 100% !important;
+         border-radius: 50px;
+         border-color: #DFDFDF;
+         height: 50px;
+        }
+        .inFillDivCU textarea{
+         width: 100% !important;
+         border-radius: 50px;
+         border-color: #DFDFDF;
+        }
+        .inFillDivCU button{
+             border: 2px solid;
+             width: 25%;
+             text-align: center;
+             border-radius: 20px;
+             font-family: "Exo", sans-serif;
+             font-weight: 400;
+             font-size: 100%;
+             font-style: normal;
+             margin-top: 5%;
+             background-color: transparent;
+             color: #fff;
+             background-color: var(--c4);
+             transition: 300ms all ease;
+        }
+        .inFillDivCU button:hover{
+             box-shadow: 2px 2px 2px 2px #E63335;
+             transition: .5s ease-in-out;
+             cursor: pointer;
+             transform: scale(1.1);
+        }
+ 
+        /************************** For Mobile responsive   ************************************/
+        @media only screen and (max-width:480px){
+         .formTitle{
+             width: 100%;
+         }
+         .formBlanks{
+             width: 100%;
+         }
+        }
+ 
+        /*************************************** For Tab Responsive **************************************************/
+        @media (min-width:500px) and (max-width:1024px){
+         .formTitle{
+             width: 100%;
+         }
+         .formBlanks{
+             width: 100%;
+         }
+        }
+     </style>
+     <section class="secFillForm">
+         <div class="divFillForm">
+             <div class="formTitle">
+                 <h1>Have questions?</h1>
+                 <p>Complete our contact form, and we’ll get back to you shortly.</p>
+             </div>
+             <div class="formBlanks">
+                 <form action="#">
+                     <div class="inFillDivCU">
+                         <input type="text" name="name" id="name" placeholder="Your Name">
+                     </div><br>
+                     <div class="inFillDivCU">
+                         <input type="email" name="email" id="email" placeholder="Your Email">
+                     </div><br>
+                     <div class="inFillDivCU">
+                         <input type="text" name="subject" id="subject" placeholder="Subject">
+                     </div><br>
+                     <div class="form-group inFillDivCU">
+                         <!-- <label>Phone Number</label> -->
+                         <input type="text" id="mobile_code" class="js-states form-control"  placeholder="Phone Number" name="name">
+                     </div><br>
+                     <div class="inFillDivCU">
+                         <textarea name="textarea" id="textArea" cols="135" rows="10"></textarea>
+                     </div><br>
+                     <div class="inFillDivCU">
+                         <button type="submit">Submit</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </section>
+
+     <!---------------------------------------- Footer for the Page -------------------------------------------------->
+
+     <footer class="footerContent">
+        <div class="footContainer">
+            <div class="divRightSide">
+                <img src="./assets/images/logo_page-0001.jpg" alt="">
+                <div class="iconBtns">
+                    <a href="" target="_self"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="Links">
+                <h3>Quick Links</h3>
+                <a href="./index.html" target="_self">Home</a>
+                <a href="./AboutUs.html" target="_self">About Us</a>
+                <a href="./Franchise.html" target="_self">Franchise</a>
+                <a href="./Curriclum.html" target="_self">Curriculum & Programs</a>
+                <a href="./ContactUs.html" target="_self">Contact Us</a>
+            </div>
+            <div class="contactUs">
+                <h3>Find Us Here</h3>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M49.56,51.82a9.61,9.61,0,1,1,9.61-9.61A9.62,9.62,0,0,1,49.56,51.82Z"></path><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M49.28,57a15,15,0,1,1,15-15A15,15,0,0,1,49.28,57Zm0-24a9,9,0,1,0,9,9A9,9,0,0,0,49.28,33Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M47.39,89.37a143.46,143.46,0,0,1-15-14.86C22,62.65,17,52,17,42.91V42a32.5,32.5,0,1,1,65,0v.91c0,9.11-5.27,19.74-15.6,31.6A134.48,134.48,0,0,1,51.18,89.37l-1.9,1.53Zm2.11-74A26.55,26.55,0,0,0,23,42v.91C23,58.53,43.11,77.52,49.33,83l0,.12L49.5,83C55.71,77.52,76,58.53,76,42.91V42A26.55,26.55,0,0,0,49.5,15.36Z"></path></svg></div>
+                    <div class="locDetails">
+                        <p class="loc">Location</p>
+                        <p>Hyderabad & Bengaluru</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><g id="_Group_" data-name="<Group>"><path id="_Path_" data-name="<Path>" class="cls-1" d="M31,14.4H70c1.66,0,3.36,2,3.36,3.66v1.83H27.68V18.06C27.68,16.4,29.38,14.4,31,14.4Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M70,86.7a3,3,0,0,1-2.09.62H32.2c-1.51,0-3.07-.86-3.07-2.33V75.95H70.87v9.13A2.32,2.32,0,0,1,70,86.7Z"></path><g id="_Group_2" data-name="<Group>"><g id="_Group_3" data-name="<Group>"><g id="_Group_4" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M75.09,83.37v-66a8,8,0,0,0-8-8H32.39a8,8,0,0,0-8,8v66a8,8,0,0,0,8,8H67.15A8,8,0,0,0,72.87,89,7.72,7.72,0,0,0,75.09,83.37ZM69,85.25a2.59,2.59,0,0,1-1.88.8H32.39a2.68,2.68,0,0,1-2.67-2.67v-66a2.68,2.68,0,0,1,2.67-2.67H67.06a2.68,2.68,0,0,1,2.67,2.67v66A2.46,2.46,0,0,1,69,85.25Z"></path></g></g><g id="_Group_5" data-name="<Group>"><g id="_Group_6" data-name="<Group>"><rect id="_Path_3" data-name="<Path>" class="cls-2" x="27.05" y="19.82" width="45.46" height="5.35"></rect></g></g><g id="_Group_7" data-name="<Group>"><g id="_Group_8" data-name="<Group>"><rect id="_Path_4" data-name="<Path>" class="cls-2" x="27.05" y="71.43" width="45.46" height="5.35"></rect></g></g><g id="_Group_9" data-name="<Group>"><g id="_Group_10" data-name="<Group>"><path id="_Path_5" data-name="<Path>" class="cls-2" d="M52,78.65H47.55a2.67,2.67,0,1,0,0,5.35H52a2.67,2.67,0,1,0,0-5.35Z"></path></g></g></g></g></svg></div>
+                    <div class="locDetails numContact">
+                        <p class="loc">Contact</p>
+                        <p >999999999</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path class="cls-1" d="M50.13,56.31A3.61,3.61,0,0,1,48,55.59L15.88,31.72V26.88a3.63,3.63,0,0,1,3.63-3.62H80.76a3.63,3.63,0,0,1,3.63,3.63v4.84L52.3,55.59A3.61,3.61,0,0,1,50.13,56.31Z"></path><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M80.63,17.5H19.38A9.39,9.39,0,0,0,10,26.88v7.73L44.4,60.2a9.32,9.32,0,0,0,11.19,0L90,34.61V26.88A9.39,9.39,0,0,0,80.63,17.5Zm3.13,14L51.87,55.18a3.11,3.11,0,0,1-3.73,0L16.25,31.47V26.88a3.13,3.13,0,0,1,3.13-3.12H80.63a3.13,3.13,0,0,1,3.13,3.13Zm0,15.58L90,42.4V73.13a9.39,9.39,0,0,1-9.37,9.38H19.38A9.39,9.39,0,0,1,10,73.13V42.4L16.25,47V73.13a3.13,3.13,0,0,0,3.13,3.13H80.63a3.13,3.13,0,0,0,3.13-3.12Z"></path></g></svg></div>
+                    <div class="locDetails">
+                        <p class="loc">Email</p>
+                        <p>hello@kiyaschool.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footbottom">
+            <div>©2024. The Pencil Preschool & Daycare. All Rights Reserved</div>
+            <div>
+                <a href="./Privacy.html" target="_self">
+                    Privacy Policy 
+                </a>
+                 | 
+                 <a href="./disclaimer.html" target="_self">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+        <!-- <------------------------- Script tags  -----------------------------> 
+
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js'></script><script  src="./script.js"></script>
+      
+    <script src="https://cdn.jsdelivr.net/gh/linuxguist/countries@main/script.js"></script>
+    
+      <script type="text/javascript">
+        document.addEventListener("load", loadCountries());
+        document.getElementById('single').value = "";
+      </script>
+    
+        <!-- Select2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script>
+          $("#single").select2({
+              // placeholder: "Select a programming language",
+              allowClear: true
+          });
+          $("#multiple").select2({
+              // placeholder: "Select a programming language",
+              allowClear: true
+          });
+        </script>
+</body>
+</html>

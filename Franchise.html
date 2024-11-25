@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Itim&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css'><link rel="stylesheet" href="./style.css">
+
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+     <!--------------------------------- Header Part ------------------------------------------>
+     <header class="headerPro">
+        <nav class="navHeader">
+            <div class="logoHeader">
+                <a href="./index.html" target="_self"><img src="./assets/images/logo_page-0001.jpg" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="leftSideHeader links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <ul class="ulleftHeader">
+                    <li><a href="./index.html" target="_self">Home</a></li>
+                    <li><a href="./AboutUs.html" target="_self">About Us</a></li>
+                    <li><a href="./Franchise.html" target="_self">Franchise</a></li>
+                    <li><a href="./Curriclum.html" target="_self">Curriculum & Programs</a></li>
+                    <li><a href="./ContactUs.html" target="_self">Contacnt Us</a></li>
+                    <li class="num"><a href="" target="_self"><i class="fa-solid fa-phone"></i>&nbsp; | &nbsp;9999999999</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------------------------------- Franchise Banner -------------------------------------------->
+    <style>
+        .secFranBan{
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            background-image: url("assets/images/shakehands.jpg");
+            height: 90vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+        .secFranBan::after{
+            content: "";
+            background-image: url("assets/images/bottomwave3.png");
+            background-attachment: scroll;
+            width: 100%;
+            height: 26vh;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .divFranBan{
+            width: 100%;
+            height: 100%;
+        }
+        .divFranBan >h1{
+            width: 40%;
+            height: auto;
+            font-family: "Coiny", system-ui;
+            font-weight: 400;
+            font-size: 60px;
+            font-style: normal;
+            color: #fff;
+            margin: 11% 10%;
+        }
+          /************************************* For mobile Responsive  ********************************************/
+          @media only screen and (max-width:480px){
+            .secBanForCU{
+                position: relative;
+                display: block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                width: 100%;
+                height: 80vh;
+            }
+        .secBanForCU::after{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        .divFranBan{
+                width: 100%;
+                height: 100%;
+            }
+        .divFranBan >h1{
+                width: 39%;
+                height: auto;
+                font-family: "Coiny", system-ui;
+                font-weight: 400;
+                font-size: 52px;
+                font-style: normal;
+                color: #fff;
+                margin: 15% 5%;
+            }
+        }
+        /****************************** For Tab Responsive ********************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .secFranBan{
+                position: relative;
+                display: block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                width: 100%;
+                height: 80vh;
+            }
+            .secFranBan::after{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .divFranBan{
+                width: 100%;
+                height: 100%;
+            }
+            .divFranBan >h1{
+                width: 40%;
+                height: auto;
+                font-family: "Coiny", system-ui;
+                font-weight: 400;
+                font-size: 80px;
+                font-style: normal;
+                color: #fff;
+                margin: 15% 5%;
+            }
+        }
+    </style>
+    <section class="secFranBan">
+        <div class="divFranBan">
+            <h1>Start
+                your own
+                FRANCHISE PRESCHOOL!</h1>
+        </div>
+    </section>
+
+    <!------------------------------------------ Franchise Intro ---------------------------------------->
+
+    <style>
+        .secFran{
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            padding: 66px 20px;
+        }
+        .divFran{
+            display: flex;
+            justify-content: start;
+            gap: 22px;
+        }
+        .inDiv1Fran{
+            width: 50%;
+        }
+        .inDiv1Fran>img{
+            width: 100%;
+        }
+        .inDiv2Fran{
+            width: 50%;
+            align-items: center;
+            padding: 10% 5% 10% 5%;
+            line-height: 30px;
+            line-break: normal;
+        }
+        .inDiv2Fran>h1{
+            font-family: "Poller One", serif;
+            font-size: 50px;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .inDiv2Fran>p{
+            font-size: 18px;
+            margin-top: 6%;
+        }
+        .inDiv2Fran>div{
+            border: 2px solid;
+            font-size: 18px;
+            width: 30%;
+            align-items: center;
+            text-align: center;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            background-color: var(--c4);
+            color: #fff;
+            margin-top: 6%;
+            transition: 300ms all ease;
+        }
+        .inDiv2Fran>div:hover{
+            box-shadow: 2px 2px 2px 2px #E63335;
+            transition: .5s ease-in-out;
+            transform: scale(1.1);
+        }
+        /******************************* For mobile Responsive  *******************************/
+        @media only screen and (max-width:480px){
+            .divFran{
+                display: grid;
+            }
+            .inDiv1Fran{
+                width: 100%;
+                height: 100%;
+            }
+            .inDiv1Fran>img{
+                width: 100%;
+                height: 100%;
+            }
+            .inDiv2Fran{
+                width: 100%;
+            }
+            .inDiv2Fran>h1{
+                font-size: 40px;
+            }
+            .inDiv2Fran>div{
+                width: 60%;
+            }
+        }
+        /************************************* For Tab Responsive  **********************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divFran{
+                display: grid;
+            }
+            .inDiv1Fran{
+                width: 100%;
+                height: 100%;
+            }
+            .inDiv1Fran>img{
+                width: 100%;
+                height: 100%;
+            }
+            .inDiv2Fran{
+                width: 100%;
+            }
+            .inDiv2Fran>h1{
+                font-size: 60px;
+            }
+            .inDiv2Fran>p{
+                font-size: 25px;
+            }
+            .inDiv2Fran>div{
+                width: 30%;
+            }
+        }
+    </style>
+
+    <section class="secFran">
+        <div class="divFran">
+            <div class="inDiv1Fran">
+                <img src="./assets/images/Franchise.png" alt="">
+            </div>
+            <div class="inDiv2Fran">
+                <h1>Franchise Introduction</h1> 
+                <p>Our franchise support system, featuring our exclusive G.R.O.W.T.H framework, is designed to ensure your success from day one. We provide comprehensive training, continuous operational support, and a proven curriculum that differentiates us from the rest.</p>
+                <div ><a href="#EnqForMore" target="_self" style="color: #fff; scroll-behavior: smooth;">Enquire Now</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------- Why Partner with Pencil PreSchool --------------------------------------->
+    <style>
+        .secWhyFran{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-top: 66px;
+            padding-bottom: 66px;
+            background-color: var(--bc2);
+        }
+        .secWhyFran::before{
+            content: "";
+            background-image: url("assets/images/top_white_wave_03.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 10vh;
+        }
+        .divWhyFran{
+            display: flex;
+            justify-content: right;
+            gap: 22px;
+        }
+        .divImgWhyFran{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divImgWhyFran img{
+            width: 100%;
+            height: auto;
+        }
+        .divWhyFranContent{
+            width: 45%;
+            margin-top: 60px;
+        }
+        .divWhyFranContent h1{
+            font-family: "Poller One", serif;
+            font-weight: 400;
+            font-size: 50px;
+            font-style: normal;
+        }
+        .divWhyFranContent .years{
+            font-size: 20px;
+        }
+        .contentPara{
+            margin-top: 20px;
+        }
+        .innerContentForFranchise{
+            width: 100%;
+            margin-top: 20px;
+            display: grid;
+        }
+        .inDivContFran{
+            width: 100%;
+            display: flex;
+            gap: 22px;
+        }
+        .inDivContFran svg{
+            width: 20px;
+        }
+        .Enq{
+            border: 2px solid;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 50px;
+            border-top-left-radius: 0%;
+            background-color: var(--c4);
+            color: #fff;
+            transition: 300ms all ease;
+        }
+        .Enq:hover{
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            box-shadow: 2px 2px 2px 2px #E63335;
+            transform: scale(1.1);
+        }
+        .Enq a{
+            margin-left: 40px;
+        }
+        
+        /************************************* For mobile Responsive  *******************************************/
+        @media only screen and (max-width: 480px){
+            .divWhyFran{
+                display: grid;
+                gap: 22px;
+            }
+            .secWhyFran::before{
+                content: "";
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 10vh;
+            }
+            .divImgWhyFran{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divWhyFranContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+        /******************************************* For Tab Responsive ***************************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .divWhyFran{
+                display: grid;
+                gap: 22px;
+            }
+            .secWhyFran::before{
+                content: "";
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 10vh;
+            }
+            .divImgWhyFran{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .divWhyFranContent{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+    </style>
+    <section class="secWhyFran">
+        <div class="divWhyFran">
+            <div class="divWhyFranContent">
+                <h1>Why Partner with The Pencil PreSchool</h1>
+                <p class="contentPara">Our franchise support system, including our unique G.R.O.W.T.H support system, is designed to ensure your success from day one. We offer comprehensive training programs, ongoing operational support, and a proven curriculum that sets us apart from others.</p>
+                <div class="innerContentForFranchise">
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>BENEFIT from an alternative revenue stream through operations.</p>
+                    </div>
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>STRONG support for admissions, marketing, technology, and operations.</p>
+                    </div>
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>Providing 20 admissions with no royalty fees.</p>
+                    </div>
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>With a 2-year buyback option.</p>
+                    </div>
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>Teacher recruitment, Finnish Curriculum, and comprehensive training.</p>
+                    </div>
+                    <div class="inDivContFran">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79Z"></path><polygon id="_Path_3" data-name="<Path>" class="cls-1" points="18.9 70.86 23.66 75.62 23.66 75.63 23.66 75.63 28.42 80.39 15.73 83.56 18.9 70.86"></polygon><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M90.18,28.12a8.71,8.71,0,0,0,0-12.29L83.45,9.13a8.68,8.68,0,0,0-12.28,0L15.87,64.41a2.42,2.42,0,0,0-.64,1.13L10,86.31A2.42,2.42,0,0,0,13,89.24l20.77-5.19a2.42,2.42,0,0,0,1.13-.64ZM21,66.12l45.9-45.9,4.36,4.36-45.9,45.9ZM74.6,12.54a3.83,3.83,0,0,1,5.42,0l6.72,6.71a3.86,3.86,0,0,1,0,5.44L82.5,28.94,70.35,16.79ZM18.9,70.86l4.76,4.76h0l4.76,4.76-12.7,3.17Zm14.27,7.41L28.8,73.91,74.71,28l4.36,4.36Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M85.09,66.29H66.92a7.63,7.63,0,0,0-7.62,7.62V81.7a7.63,7.63,0,0,0,7.62,7.62H85.09a7.63,7.63,0,0,0,7.62-7.62V73.91A7.63,7.63,0,0,0,85.09,66.29ZM87.86,81.7a2.77,2.77,0,0,1-2.77,2.77H66.92a2.77,2.77,0,0,1-2.77-2.77V73.91a2.77,2.77,0,0,1,2.77-2.77H85.09a2.77,2.77,0,0,1,2.77,2.77V81.7Z"></path></g></svg>
+                        <p>Assistance with property identification and setup.</p>
+                    </div>
+                </div>
+                <div class="Enq">
+                    <a href="#EnqForMore" target="_self" style="color: #fff;">Enquire Now</a>
+                </div>
+            </div>
+            <div class="divImgWhyFran">
+                <img src="./assets/images/FranchiseDoc.jpg.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!---------------------------------------------- Minimum Requirements --------------------------------------------------------------->
+
+    <style>
+        .secMinReq{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-top: 66px;
+            padding-bottom: 66px;
+            background-color:var(--bc1);
+        }
+        .secMinReq::before{
+            content: "";
+            color: var(--bc1);
+            background-image: url("assets/images/top\ 3.png");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 10vh;
+            top: 0px;
+            left: 0;
+        }
+        .divMinReq{
+            width: 100%;
+        }
+        .divInMinPara{
+            display: inline-block;
+        }
+        .inDivMinReq1{
+            width: 100%;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .inDivMinReq1 h1{
+            font-family: "Poller One", serif;
+            font-size: 45px;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .inDivMinReq1 p{
+            margin-top: 40px;
+            margin-left: 26%;
+            width: 50%;
+        }
+        .inDivMinReq2{
+            width: 100%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .inDivMin2{
+            width: 20%;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            border-radius: 30px;
+            background-color: var(--bc2);
+        }
+        .inDivMin2 svg{
+            width: 55px;
+        }
+        .paraRed{
+            color: var(--c4);
+            font-weight: 800;
+        }
+        .inDivMinReq3{
+            margin-top: 30px;
+            text-align: center;
+        }
+        /********************************* For Mobile Responsive *****************************************/
+        @media only screen and (max-width:480px){
+            .secMinReq{
+                width: 100%;
+                height: auto;
+            }
+            .secMinReq::before{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 20vh;
+                top: 0px;
+                left: 0;
+            }
+            .divMinReq{
+                width: 100%;
+                display: grid;
+                justify-content: center;
+            }
+            .inDivMinReq1{
+                width: 100%;
+                margin: 0;
+                margin-top: 80px;
+                margin-left: 0;
+            }
+            .inDivMinReq1 h1{
+                width: 100%;
+                font-size: 35px;
+            }
+            .inDivMinReq1 p{
+                margin-top: 40px;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+            .inDivMinReq2{
+                width: 100%;
+                display: grid;
+                gap: 22px;
+            }
+            .inDivMin2{
+                width: 110%;
+            }
+        }
+
+            /**************************** For Tab Responsive  *****************************/
+        @media (min-width:500px) and (max-width:1024px){
+            .secMinReq{
+                width: 100%;
+                height: auto;
+            }
+            .secMinReq::before{
+                content: "";
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 15vh;
+                top: 0px;
+                left: 0;
+            }
+            .divMinReq{
+                width: 100%;
+                display: grid;
+                justify-content: center;
+                margin-top: 120px;
+            }
+            .inDivMinReq1{
+                width: 100%;
+                margin: 0;
+                margin-top: 80px;
+                margin-left: 0;
+            }
+            .inDivMinReq1 h1{
+                width: 100%;
+                font-size: 35px;
+            }
+            .inDivMinReq1 p{
+                margin-top: 40px;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+            .inDivMinReq2{
+                width: 100%;
+                display: grid;
+                gap: 22px;
+            }
+            .inDivMin2{
+                width: 110%;
+            }
+        }
+    </style>
+    <section class="secMinReq">
+        <div class="divMinReq">
+            <div class="inDivMinReq1">
+                <h1>Minimum Requirements</h1>
+                <p>Explore the key criteria to join the Pencil Preschool & Daycare franchise family and begin a rewarding journey in early childhood education.</p>
+            </div>
+            <div class="inDivMinReq2">
+                <div class="inDivMin2">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path class="cls-1" d="M50.3,78a27.06,27.06,0,0,1-27-27V33l27-11.26L77.33,33V51A27.06,27.06,0,0,1,50.3,78Z"></path><g id="_Group_" data-name="<Group>"><g id="_Group_2" data-name="<Group>"><g id="_Group_3" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M83.76,17.54a7.24,7.24,0,0,0-7.24,7.24v3.62L50,17.34,23.47,28.39V24.78A7.24,7.24,0,0,0,9,24.78V44.07A12.08,12.08,0,0,0,19,55.95a31.35,31.35,0,0,0,62,0A12.08,12.08,0,0,0,91,44.07V24.78A7.24,7.24,0,0,0,83.76,17.54ZM13.82,44.07V24.78a2.41,2.41,0,0,1,4.82,0V50.89A7.25,7.25,0,0,1,13.82,44.07ZM50,77.84A26.56,26.56,0,0,1,23.47,51.31V33.62L50,22.57,76.53,33.62V51.31A26.56,26.56,0,0,1,50,77.84ZM86.18,44.07a7.25,7.25,0,0,1-4.82,6.82V24.78a2.41,2.41,0,0,1,4.82,0Z"></path><path id="_Path_" data-name="<Path>" class="cls-2" d="M64.47,36.84v4.82H35.53V36.84"></path><path id="_Path_2" data-name="<Path>" class="cls-2" d="M35.53,48.9H64.47v4.82H35.53Z"></path><path id="_Path_3" data-name="<Path>" class="cls-2" d="M35.53,65.78V61H64.47v4.82"></path></g></g></g></svg>
+                    <div class="divInMinPara">
+                        <p class="paraRed">Carpet Area Required</p>
+                        <p>1500 -2500 Sq.ft.</p>
+                    </div>
+                </div>
+                <div class="inDivMin2">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path class="cls-1" d="M18,86.47a4.21,4.21,0,0,1-3-7.19L20.28,74a9.52,9.52,0,0,0,2.64-5l2.29-12.37a5.5,5.5,0,0,1,1.53-2.9L62.83,17.63A14,14,0,0,1,82.63,37.43L46.54,73.51A5.51,5.51,0,0,1,43.64,75L31.26,77.33a9.52,9.52,0,0,0-5,2.64L21,85.23A4.19,4.19,0,0,1,18,86.47ZM55.11,37.79a7.31,7.31,0,0,0-5.2,2.15L39.85,50a7.35,7.35,0,1,0,10.4,10.4L60.31,50.34a7.35,7.35,0,0,0-5.2-12.55ZM72.73,20.48a7,7,0,1,0,7,7A7.06,7.06,0,0,0,72.73,20.48Z"></path><g id="_Group_" data-name="<Group>"><g id="_Group_2" data-name="<Group>"><g id="_Group_3" data-name="<Group>"><g id="Page-1"><g id="body_care_export" data-name="body care export"><path id="thermometer_-ill_-sick_-temperature_-measure" data-name="thermometer,-ill,-sick,-temperature,-measure" class="cls-2" d="M49.49,76.72A10.06,10.06,0,0,1,44.2,79.5L31.83,81.79a5,5,0,0,0-2.64,1.39l-5.26,5.26A8.74,8.74,0,1,1,11.56,76.07l5.26-5.26a5,5,0,0,0,1.39-2.64L20.5,55.8a10.06,10.06,0,0,1,2.78-5.28L59.37,14.43a18.53,18.53,0,0,1,26.2,26.2Zm-3.56-3.56L82,37.07A13.5,13.5,0,0,0,62.93,18L26.84,54.07a5,5,0,0,0-1.39,2.64L23.16,69.09a10.06,10.06,0,0,1-2.78,5.28l-5.26,5.26a3.71,3.71,0,0,0,5.25,5.25l5.26-5.26a10.06,10.06,0,0,1,5.28-2.78l12.37-2.29a5,5,0,0,0,2.64-1.39Zm-6.69-12.4a7.85,7.85,0,0,1,0-11.11L49.3,39.59A7.85,7.85,0,0,1,60.41,50.7L50.35,60.76A7.85,7.85,0,0,1,39.24,60.76ZM56.85,47.14a2.82,2.82,0,0,0-4-4L42.8,53.21a2.82,2.82,0,0,0,4,4ZM72.47,35.08A7.55,7.55,0,1,1,80,27.53,7.55,7.55,0,0,1,72.47,35.08Zm0-5A2.52,2.52,0,1,0,70,27.53,2.52,2.52,0,0,0,72.47,30Z"></path></g></g></g></g></g></svg>
+                    <div class="divInMinPara">
+                        <p class="paraRed">Investment Required</p>
+                        <p>10- 15 Lakhs</p>
+                        <p>(Depending on the area)</p>
+                    </div>
+                </div>
+                <div class="inDivMin2">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path class="cls-1" d="M50.3,78a27.06,27.06,0,0,1-27-27V33l27-11.26L77.33,33V51A27.06,27.06,0,0,1,50.3,78Z"></path><g id="_Group_" data-name="<Group>"><g id="_Group_2" data-name="<Group>"><g id="_Group_3" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M83.76,17.54a7.24,7.24,0,0,0-7.24,7.24v3.62L50,17.34,23.47,28.39V24.78A7.24,7.24,0,0,0,9,24.78V44.07A12.08,12.08,0,0,0,19,55.95a31.35,31.35,0,0,0,62,0A12.08,12.08,0,0,0,91,44.07V24.78A7.24,7.24,0,0,0,83.76,17.54ZM13.82,44.07V24.78a2.41,2.41,0,0,1,4.82,0V50.89A7.25,7.25,0,0,1,13.82,44.07ZM50,77.84A26.56,26.56,0,0,1,23.47,51.31V33.62L50,22.57,76.53,33.62V51.31A26.56,26.56,0,0,1,50,77.84ZM86.18,44.07a7.25,7.25,0,0,1-4.82,6.82V24.78a2.41,2.41,0,0,1,4.82,0Z"></path><path id="_Path_" data-name="<Path>" class="cls-2" d="M64.47,36.84v4.82H35.53V36.84"></path><path id="_Path_2" data-name="<Path>" class="cls-2" d="M35.53,48.9H64.47v4.82H35.53Z"></path><path id="_Path_3" data-name="<Path>" class="cls-2" d="M35.53,65.78V61H64.47v4.82"></path></g></g></g></svg>
+                    <div class="divInMinPara">
+                        <p class="paraRed">Agreement Period</p>
+                        <p>6 Years</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inDivMinReq3">
+                <div class="Enq">
+                    <a href="#EnqForMore" target="_self" style="color: #fff;">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------- Quick Enquiry ------------------------------------------------->
+    <style>
+        .secQukEnq{
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            padding-top: 66px;
+            padding-bottom: 66px;
+        }
+        .secQukEnq::before{
+            content: "";
+            background-image: url("assets/images/top1\ c1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 25vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .divQukEnq{
+            width: 100%;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-items: center;
+            gap: 22px;
+        }
+        .indivQukEnq1{
+            width: 45%;
+        }
+        .indivQukEnq2{
+            width: 45%;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+        }
+        .indiv22{
+            text-align: center;
+        }
+        .indivQukEnq1 h1{
+            font-family: "Poller One", serif;
+            font-size: 50px;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .indivQukEnq1 p{
+            margin-top: 30px;
+        }
+        .indivQukEnq2 h3{
+            font-family: "Exo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-size: 150%;
+            font-style: normal;
+            margin-top: 5%;
+        }
+        .infoDetails{
+            margin-top: 5%;
+            display: grid;
+        }
+        .inFillDiv>input{
+            width: 57% !important;
+            border-radius: 6px !important;
+            height: 150% !important;
+            text-align: start !important;
+            font-family: "DM Sans", sans-serif !important;
+            font-size: 18px !important;
+            border-color: #DFDFDF;
+        }
+        .Radio>p{
+            text-align: start;
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+        }
+        .Radio>p>strong{
+            color: var(--c4);
+        }
+        .subBtn>button{
+            border: 2px solid;
+            width: 25%;
+            text-align: center;
+            border-radius: 20px;
+            font-family: "Exo", sans-serif;
+            font-weight: 400;
+            font-size: 100%;
+            font-style: normal;
+            margin-top: 5%;
+            background-color: transparent;
+            color: #fff;
+            background-color: var(--c4);
+            transition: 300ms all ease;
+        }
+        .subBtn>button:hover{
+            box-shadow: 2px 2px 2px 2px #E63335;
+            transition: .5s ease-in-out;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        
+        /************************************ For Mobile Responsive ****************************************************/
+        @media only screen and (max-width:480px){
+            .secQukEnq::before{
+                content: "";
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 10vh;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .divQukEnq{
+                width: 100%;
+                display: grid;
+                justify-content: center;
+            }
+            .indivQukEnq1{
+                width: 100%;
+                text-align: center;
+            }
+            .indivQukEnq2 {
+                width: 100%;
+            }
+        }
+
+        /*********************************** For Tab Responsive *************************************/
+
+        @media (min-width:500px) and (max-width:1024px){
+            .secQukEnq::before{
+                content: "";
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 10vh;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .divQukEnq{
+                width: 100%;
+                display: grid;
+                justify-content: center;
+            }
+            .indivQukEnq1{
+                width: 100%;
+                text-align: center;
+            }
+            .indivQukEnq2 {
+                width: 100%;
+            }
+        }
+    </style>
+    <section class="secQukEnq" id="EnqForMore">
+        <div class="divQukEnq">
+            <div class="indivQukEnq1">
+                <h1>Quick Enquiry</h1>
+                <p>Start your journey towards a rewarding franchise opportunity by filling out our interest form and joining the Pencil Preschool & Daycare family.</p>
+            </div>
+            <div class="indivQukEnq2">
+                <div class="indiv22">
+                    <h3>Share your details here, and we’ll get in touch with you shortly.</h3>
+                    <div class="detailsTable">
+                        <form action="#" class="infoDetails">
+                                <div class="inFillDiv"><input type="text" id="name" name="name" placeholder="Your Name"></div><br>
+                                <div class="inFillDiv"><input type="email" id="email" name="email" placeholder="Your Email"></div><br>
+                                <div class="inFillDiv"><input type="text" name="city" id="city" placeholder="Your City"></div><br>
+                                <div class="inFillDiv"><div data-toggle-group="location">
+
+                                    <div class="form-group inFillDiv">
+                                        <!-- <label>Phone Number</label> -->
+                                        <input type="text" id="mobile_code" class="js-states form-control"  placeholder="Phone Number" name="name">
+                                    </div>
+                                </div></div><br><br>
+                                <div class="Radio">
+                                    <p>Do you have prior experience with Early Childhood Development Centres or any education sector? <strong>*</strong></p>
+                                    <input type="radio" id="yes" name="choice" value="yes">
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" id="no" name="choice" value="no">
+                                    <label for="no">No</label>
+                                </div>
+                                <div class="subBtn"><button type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!---------------------------------------- Footer for the Page -------------------------------------------------->
+
+       <footer class="footerContent">
+        <div class="footContainer">
+            <div class="divRightSide">
+                <img src="./assets/images/logo_page-0001.jpg" alt="">
+                <div class="iconBtns">
+                    <a href="" target="_self"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" target="_self"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="Links">
+                <h3>Quick Links</h3>
+                <a href="./index.html" target="_self">Home</a>
+                <a href="./AboutUs.html" target="_self">About Us</a>
+                <a href="./Franchise.html" target="_self">Franchise</a>
+                <a href="./Curriclum.html" target="_self">Curriculum & Programs</a>
+                <a href="./ContactUs.html" target="_self">Contact Us</a>
+            </div>
+            <div class="contactUs">
+                <h3>Find Us Here</h3>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path id="_Path_" data-name="<Path>" class="cls-1" d="M49.56,51.82a9.61,9.61,0,1,1,9.61-9.61A9.62,9.62,0,0,1,49.56,51.82Z"></path><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M49.28,57a15,15,0,1,1,15-15A15,15,0,0,1,49.28,57Zm0-24a9,9,0,1,0,9,9A9,9,0,0,0,49.28,33Z"></path><path id="_Compound_Path_2" data-name="<Compound Path>" class="cls-2" d="M47.39,89.37a143.46,143.46,0,0,1-15-14.86C22,62.65,17,52,17,42.91V42a32.5,32.5,0,1,1,65,0v.91c0,9.11-5.27,19.74-15.6,31.6A134.48,134.48,0,0,1,51.18,89.37l-1.9,1.53Zm2.11-74A26.55,26.55,0,0,0,23,42v.91C23,58.53,43.11,77.52,49.33,83l0,.12L49.5,83C55.71,77.52,76,58.53,76,42.91V42A26.55,26.55,0,0,0,49.5,15.36Z"></path></svg></div>
+                    <div class="locDetails">
+                        <p class="loc">Location</p>
+                        <p>Hyderabad & Bengaluru</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><g id="_Group_" data-name="<Group>"><path id="_Path_" data-name="<Path>" class="cls-1" d="M31,14.4H70c1.66,0,3.36,2,3.36,3.66v1.83H27.68V18.06C27.68,16.4,29.38,14.4,31,14.4Z"></path><path id="_Path_2" data-name="<Path>" class="cls-1" d="M70,86.7a3,3,0,0,1-2.09.62H32.2c-1.51,0-3.07-.86-3.07-2.33V75.95H70.87v9.13A2.32,2.32,0,0,1,70,86.7Z"></path><g id="_Group_2" data-name="<Group>"><g id="_Group_3" data-name="<Group>"><g id="_Group_4" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M75.09,83.37v-66a8,8,0,0,0-8-8H32.39a8,8,0,0,0-8,8v66a8,8,0,0,0,8,8H67.15A8,8,0,0,0,72.87,89,7.72,7.72,0,0,0,75.09,83.37ZM69,85.25a2.59,2.59,0,0,1-1.88.8H32.39a2.68,2.68,0,0,1-2.67-2.67v-66a2.68,2.68,0,0,1,2.67-2.67H67.06a2.68,2.68,0,0,1,2.67,2.67v66A2.46,2.46,0,0,1,69,85.25Z"></path></g></g><g id="_Group_5" data-name="<Group>"><g id="_Group_6" data-name="<Group>"><rect id="_Path_3" data-name="<Path>" class="cls-2" x="27.05" y="19.82" width="45.46" height="5.35"></rect></g></g><g id="_Group_7" data-name="<Group>"><g id="_Group_8" data-name="<Group>"><rect id="_Path_4" data-name="<Path>" class="cls-2" x="27.05" y="71.43" width="45.46" height="5.35"></rect></g></g><g id="_Group_9" data-name="<Group>"><g id="_Group_10" data-name="<Group>"><path id="_Path_5" data-name="<Path>" class="cls-2" d="M52,78.65H47.55a2.67,2.67,0,1,0,0,5.35H52a2.67,2.67,0,1,0,0-5.35Z"></path></g></g></g></g></svg></div>
+                    <div class="locDetails numContact">
+                        <p class="loc">Contact</p>
+                        <p >999999999</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="locImg"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffb129;}.cls-2{fill:#333538;}</style></defs><title>_</title><path class="cls-1" d="M50.13,56.31A3.61,3.61,0,0,1,48,55.59L15.88,31.72V26.88a3.63,3.63,0,0,1,3.63-3.62H80.76a3.63,3.63,0,0,1,3.63,3.63v4.84L52.3,55.59A3.61,3.61,0,0,1,50.13,56.31Z"></path><g id="_Group_" data-name="<Group>"><path id="_Compound_Path_" data-name="<Compound Path>" class="cls-2" d="M80.63,17.5H19.38A9.39,9.39,0,0,0,10,26.88v7.73L44.4,60.2a9.32,9.32,0,0,0,11.19,0L90,34.61V26.88A9.39,9.39,0,0,0,80.63,17.5Zm3.13,14L51.87,55.18a3.11,3.11,0,0,1-3.73,0L16.25,31.47V26.88a3.13,3.13,0,0,1,3.13-3.12H80.63a3.13,3.13,0,0,1,3.13,3.13Zm0,15.58L90,42.4V73.13a9.39,9.39,0,0,1-9.37,9.38H19.38A9.39,9.39,0,0,1,10,73.13V42.4L16.25,47V73.13a3.13,3.13,0,0,0,3.13,3.13H80.63a3.13,3.13,0,0,0,3.13-3.12Z"></path></g></svg></div>
+                    <div class="locDetails">
+                        <p class="loc">Email</p>
+                        <p>hello@kiyaschool.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footbottom">
+            <div>©2024. The Pencil Preschool & Daycare. All Rights Reserved</div>
+            <div>
+                <a href="./Privacy.html" target="_self">
+                    Privacy Policy 
+                </a>
+                 | 
+                 <a href="./disclaimer.html" target="_self">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <!------------------------- Script tags  ----------------------------->
+
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js'></script><script  src="./script.js"></script>
+      
+    <script src="https://cdn.jsdelivr.net/gh/linuxguist/countries@main/script.js"></script>
+    
+      <script type="text/javascript">
+        document.addEventListener("load", loadCountries());
+        document.getElementById('single').value = "";
+      </script>
+    
+        <!-- Select2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script>
+          $("#single").select2({
+              // placeholder: "Select a programming language",
+              allowClear: true
+          });
+          $("#multiple").select2({
+              // placeholder: "Select a programming language",
+              allowClear: true
+          });
+        </script>
+</body>
+</html>
